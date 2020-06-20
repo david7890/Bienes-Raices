@@ -13,7 +13,7 @@ img{/*selector todos img**/
 }
 .contenedor{
     max-width: 120rem;/**120px**/
-    margin: 0 auto 0 auto;/*centrar contenedor*/
+    margin: 0 auto;/*centrar contenedor*/
 
 }
 h1{
@@ -39,15 +39,25 @@ h4{
 .centrar-texto{
     text-align: center;
 }
+.d-block{
+    display: block!important;
+}
 /**Botones**/
 .boton{
+    color: white;
     font-weight: 700;
     text-decoration: none;
     font-size: 1.8rem;
     padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
 }
 .boton-amarillo{
     background-color: orange;
+}
+.boton-verde{
+    background-color: green;
 }
 /*header dos clases*/
 .site-header.inicio{ 
@@ -113,12 +123,45 @@ h4{
     background-color: #F5F5F5;
 }
 .contenido-anuncio{
-    padding: 2rem 4rem;
+    padding: 2rem;
 }
-.contenido-anuncio h3, .contenido-anuncio p{
+.contenido-anuncio h3{
     margin: 0;
 }
 .precio{
     color: #71B100;
     font-weight: 700;
+}
+.iconos-caracteristicas{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.iconos-caracteristicas li{
+    display: flex;
+}
+
+.iconos-caracteristicas li img{
+    margin-right: 2rem;
+}
+.ver-todas{
+    display: flex;
+    justify-content: flex-end;
+}
+.imagen-contacto{
+    background-image: url(../img/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 60rem;
+    display: flex;
+    align-items: center;
+
+}
+.contenido-contacto{
+    flex: 1;
+    color: white;
+}
+.contenido-contacto p{
+    font-size: 1.9 rem;
 }
